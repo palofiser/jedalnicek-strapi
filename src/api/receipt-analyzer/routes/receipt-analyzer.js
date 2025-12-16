@@ -7,6 +7,7 @@ module.exports = {
       path: '/receipt-analyzer/analyze',
       handler: 'receipt-analyzer.analyze',
       config: {
+        auth: false,
         policies: [],
         middlewares: [],
       },
