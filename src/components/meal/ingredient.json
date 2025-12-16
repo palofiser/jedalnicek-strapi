@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_meal_ingredients",
+  "info": {
+    "name": "Ingredient",
+    "icon": "carrot",
+    "displayName": "Ingredient",
+    "description": "Ingrediencia pre jedlo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shopping_items",
+  "info": {
+    "singularName": "shopping-item",
+    "pluralName": "shopping-items",
+    "displayName": "Shopping Item",
+    "description": "Položka nákupného zoznamu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

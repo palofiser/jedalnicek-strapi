@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventory_items",
+  "info": {
+    "singularName": "inventory-item",
+    "pluralName": "inventory-items",
+    "displayName": "Inventory Item",
+    "description": "Položka v zásobách"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "lowStock": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

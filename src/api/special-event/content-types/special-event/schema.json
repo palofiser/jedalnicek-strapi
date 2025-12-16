@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_events",
+  "info": {
+    "singularName": "special-event",
+    "pluralName": "special-events",
+    "displayName": "Special Event",
+    "description": "Špeciálna udalosť"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "notes": {
+      "type": "text"
+    },
+    "eventMeals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event.event-meal"
+    },
+    "shoppingList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "event.shopping-item"
+    }
+  }
+}

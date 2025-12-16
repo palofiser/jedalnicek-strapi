@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "day_menus",
+  "info": {
+    "singularName": "day-menu",
+    "pluralName": "day-menus",
+    "displayName": "Day Menu",
+    "description": "Denné menu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "meal": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::meal.meal"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "cook": {
+      "type": "string"
+    }
+  }
+}

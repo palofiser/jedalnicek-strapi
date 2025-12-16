@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meals",
+  "info": {
+    "singularName": "meal",
+    "pluralName": "meals",
+    "displayName": "Meal",
+    "description": "Jedlo v jedálničku"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["rychle", "vikendove", "specialne"],
+      "default": "rychle"
+    },
+    "notes": {
+      "type": "text"
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meal.ingredient"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_event_shopping_items",
+  "info": {
+    "name": "ShoppingItem",
+    "icon": "shopping-cart",
+    "displayName": "Shopping Item",
+    "description": "Položka nákupného zoznamu pre udalosť"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "checked": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

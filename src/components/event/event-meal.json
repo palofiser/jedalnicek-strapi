@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_event_event_meals",
+  "info": {
+    "name": "EventMeal",
+    "icon": "utensils",
+    "displayName": "Event Meal",
+    "description": "Jedlo na udalosti"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meal.ingredient"
+    }
+  }
+}
