@@ -26,6 +26,7 @@ export interface EventShoppingItem extends Struct.ComponentSchema {
     amount: Schema.Attribute.String;
     checked: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     name: Schema.Attribute.String & Schema.Attribute.Required;
+    price: Schema.Attribute.Decimal;
     unit: Schema.Attribute.String;
   };
 }
