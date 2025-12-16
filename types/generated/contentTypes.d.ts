@@ -446,14 +446,17 @@ export interface ApiDayMenuDayMenu extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    date: Schema.Attribute.Date & Schema.Attribute.Required;
+    date: Schema.Attribute.Date &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    dinner: Schema.Attribute.Relation<'manyToOne', 'api::meal.meal'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::day-menu.day-menu'
     > &
       Schema.Attribute.Private;
-    meal: Schema.Attribute.Relation<'manyToOne', 'api::meal.meal'>;
+    lunch: Schema.Attribute.Relation<'manyToOne', 'api::meal.meal'>;
     notes: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-12-16T01:21:41.157Z"
+    "x-generation-date": "2025-12-16T01:45:37.382Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4542,7 +4542,18 @@
                 "type": "string",
                 "format": "date"
               },
-              "meal": {
+              "lunch": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": "string or id"
+              },
+              "dinner": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -4631,7 +4642,7 @@
             "type": "string",
             "format": "date"
           },
-          "meal": {
+          "lunch": {
             "type": "object",
             "properties": {
               "id": {
@@ -4965,6 +4976,17 @@
               }
             }
           },
+          "dinner": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number"
+              },
+              "documentId": {
+                "type": "string"
+              }
+            }
+          },
           "notes": {
             "type": "string"
           },
@@ -5023,7 +5045,18 @@
                   "type": "string",
                   "format": "date"
                 },
-                "meal": {
+                "lunch": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "documentId": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "dinner": {
                   "type": "object",
                   "properties": {
                     "id": {

@@ -14,9 +14,15 @@
   "attributes": {
     "date": {
       "type": "date",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "meal": {
+    "lunch": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::meal.meal"
+    },
+    "dinner": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::meal.meal"
